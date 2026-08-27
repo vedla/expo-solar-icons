@@ -1489,22 +1489,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-vector-icons/fontello@npm:^13.2.3":
-  version: 13.2.3
-  resolution: "@react-native-vector-icons/fontello@npm:13.2.3"
-  dependencies:
-    "@react-native-vector-icons/common": "npm:^13.0.2"
-  peerDependencies:
-    "@expo/config-plugins": ">=10.0.0"
-    react: "*"
-    react-native: "*"
-  peerDependenciesMeta:
-    "@expo/config-plugins":
-      optional: true
-  checksum: 10c0/fcf9ad6979581e272959ebafbbbd60510832e17bade67bf53f2c91dd1e7eef2a0065a3f53b85f687a97be527fc3fbb069f440dc89ef8cb4f3f189d0c97e4e2be
-  languageName: node
-  linkType: hard
-
 "@react-native/assets-registry@npm:0.86.3":
   version: 0.86.3
   resolution: "@react-native/assets-registry@npm:0.86.3"
@@ -1885,7 +1869,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@vedla/expo-solar-icons@workspace:."
   dependencies:
-    "@react-native-vector-icons/fontello": "npm:^13.2.3"
+    "@react-native-vector-icons/common": "npm:^13.0.2"
     "@types/react": "npm:~19.2.18"
     eslint: "npm:10.9.1"
     eslint-config-universe: "npm:16.0.0"

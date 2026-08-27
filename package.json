@@ -37,7 +37,7 @@
     "prettier:check": "prettier --check \"**/*.{js,ts,tsx}\""
   },
   "dependencies": {
-    "@react-native-vector-icons/fontello": "^13.2.3"
+    "@react-native-vector-icons/common": "^13.0.2"
   },
   "devDependencies": {
     "@types/react": "~19.2.18",
