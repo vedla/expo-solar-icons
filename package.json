@@ -1,6 +1,6 @@
 {
   "name": "@vedla/expo-solar-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Solar icons for React Native and Expo projects.",
   "keywords": [
     "react-native",
@@ -37,9 +37,7 @@
     "prettier:check": "prettier --check \"**/*.{js,ts,tsx}\""
   },
   "dependencies": {
-    "@react-native-vector-icons/common": "^13.0.2",
-    "@react-native-vector-icons/fontello": "^13.2.3",
-    "react-native-vector-icons": "^10.3.0"
+    "@react-native-vector-icons/fontello": "^13.2.3"
   },
   "devDependencies": {
     "@types/react": "~19.2.18",
