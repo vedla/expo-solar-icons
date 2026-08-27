@@ -28,8 +28,8 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    "rootDir": ".",
-    "outDir": "build",
+    "rootDir": "src",
+    "outDir": "dist",
     "paths": {
       "@/*": [
         "./src/*"

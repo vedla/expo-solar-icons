@@ -1,6 +1,6 @@
 {
   "name": "@vedla/expo-solar-icons",
-  "version": "1.0.0",
+  "version": "1.0.0+1",
   "description": "Solar icons for React Native and Expo projects.",
   "keywords": [
     "react-native",
@@ -24,7 +24,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsdown",
+    "build": "scripts/build.js",
     "clean": "scripts/clean.js",
     "lint": "eslint src/",
     "prepare": "scripts/prepare.js",
@@ -44,7 +44,6 @@
     "prettier": "^3.9.6",
     "react": "19.2.3",
     "react-native": "0.86.3",
-    "tsdown": "^0.22.14",
     "typescript": "~6.0.3"
   },
   "peerDependencies": {
