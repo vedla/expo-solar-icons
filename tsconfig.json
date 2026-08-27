@@ -29,12 +29,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "rootDir": "src",
-    "outDir": "dist",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+    "outDir": "dist"
   },
   "include": [
     "./src",

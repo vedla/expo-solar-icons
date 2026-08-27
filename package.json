@@ -1,6 +1,6 @@
 {
   "name": "@vedla/expo-solar-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Solar icons for React Native and Expo projects.",
   "keywords": [
     "react-native",
@@ -18,17 +18,23 @@
   "license": "MIT",
   "author": "Vedla <code@vedla.ca> (https://gitlab.com/vedla)",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "scripts/build.js",
     "clean": "scripts/clean.js",
     "lint": "eslint src/",
     "prepare": "scripts/prepare.js",
-    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "prettier:check": "prettier --check \"src/**/*.{ts,tsx}\""
+    "prettier": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "prettier:check": "prettier --check \"**/*.{js,ts,tsx}\""
   },
   "dependencies": {
     "@react-native-vector-icons/common": "^13.0.2",
