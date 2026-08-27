@@ -19,7 +19,7 @@
   "author": "Vedla <code@vedla.ca> (https://gitlab.com/vedla)",
   "exports": {
     ".": "./dist/index.mjs",
-    "./icons": "./dist/icons.mjs",
+    "./Icons": "./dist/Icons.mjs",
     "./SolarIcons": "./dist/SolarIcons.mjs",
     "./package.json": "./package.json"
   },

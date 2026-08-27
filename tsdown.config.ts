@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-  entry: ['src/icons.ts', 'src/index.ts', 'src/SolarIcons.ts'],
+  entry: ['src/Icons.ts', 'src/index.ts', 'src/SolarIcons.ts'],
 
   dts: true,
   unbundle: true,
