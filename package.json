@@ -2,58 +2,55 @@
   "name": "@vedla/expo-solar-icons",
   "version": "1.0.0",
   "description": "Solar icons for React Native and Expo projects.",
-  "keywords": [],
-  "license": "ISC",
-  "author": {
-    "name": "Vedla Creative",
-    "email": "code@vedla.ca"
-  },
-  "type": "commonjs",
-  "main": "build/IconsLazy.js",
-  "module": "build/Icons.js",
-  "types": "build/Icons.d.ts",
-  "files": [
-    "dist",
-    "assets"
+  "keywords": [
+    "react-native",
+    "expo",
+    "solar-icons",
+    "custom-font",
+    "fontello",
+    "icons"
   ],
-  "scripts": {
-    "build": "EXPO_NONINTERACTIVE=1 expo-module build && npm run generate-lazy && npm run copy-vendor",
-    "build:dev": "expo-module build",
-    "clean": "expo-module clean",
-    "copy-vendor": "rm -rf build/solar-icons && cp -R src/solar-icons build/solar-icons",
-    "expo-module": "expo-module",
-    "generate-lazy": "expo-module babel --config-file ./babel.config.build.js --source-maps --out-file build/IconsLazy.js build/Icons.js",
-    "lint": "expo-module lint",
-    "prepare": "expo-module prepare && npm run generate-lazy && npm run copy-vendor",
-    "prepublishOnly": "expo-module prepublishOnly",
-    "test": "expo-module test"
+  "homepage": "https://gitlab.com/vedla/expo-solar-icons#readme",
+  "bugs": {
+    "url": "https://gitlab.com/vedla/expo-solar-icons/issues"
   },
-  "jest": {
-    "preset": "expo-module-scripts"
+  "repository": "https://gitlab.com/vedla/expo-solar-icons",
+  "license": "MIT",
+  "author": "Vedla <code@vedla.ca> (https://gitlab.com/vedla)",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./icons": "./dist/icons.mjs",
+    "./SolarIcons": "./dist/SolarIcons.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "clean": "scripts/clean.js",
+    "lint": "eslint src/",
+    "prepare": "scripts/prepare.js",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "prettier:check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "@expo/vector-icons": ">=14",
-    "expo-modules-core": "^57.0.14"
+    "@react-native-vector-icons/common": "^13.0.2",
+    "@react-native-vector-icons/fontello": "^13.2.3",
+    "react-native-vector-icons": "^10.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "expo": ">=55.0.0",
-    "expo-font": ">=55.0.4",
+    "@types/react": "~19.2.18",
+    "eslint": "10.9.1",
+    "eslint-config-universe": "16.0.0",
+    "expo": "~57.0.17",
     "prettier": "^3.9.6",
-    "react": ">=19.0.0",
-    "react-native": ">=0.83.0",
-    "typescript": ">=5.2.2"
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "tsdown": "^0.22.14",
+    "typescript": "~6.0.3"
   },
   "peerDependencies": {
-    "@expo/vector-icons": ">=14",
     "expo": "*",
     "react": "*",
     "react-native": "*"
-  },
-  "peerDependenciesMeta": {
-    "@expo/vector-icons": {
-      "optional": true
-    }
   },
   "packageManager": "yarn@4.18.0"
 }

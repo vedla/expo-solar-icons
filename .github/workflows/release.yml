@@ -16,13 +16,13 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - run: corepack enable
 
-      - run: yarn install
+      - run: yarn install --immutable
       - run: yarn build
-      - run: yarn pack
+      - run: yarn pack --filename "vedla--expo-solar-icons-${github.sha}.tgz"
 
       - uses: softprops/action-gh-release@v2
         with:

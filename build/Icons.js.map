@@ -1,1 +1,0 @@
-{"version":3,"file":"Icons.js","sourceRoot":"","sources":["../src/Icons.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,EAAE,OAAO,IAAI,UAAU,EAAE,MAAM,cAAc,CAAC","sourcesContent":["'use client';\n\nexport { default as SolarIcons } from './SolarIcons';\n"]}

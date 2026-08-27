@@ -1,4 +1,4 @@
-# @furlab/expo-solar-icons
+# @vedla/expo-solar-icons
 
 Solar icons for React Native and Expo projects.
 
@@ -15,17 +15,17 @@ This package provides a simple, Expo-friendly icon set built from the Solar icon
 
 From GitHub (recommended for now)
 ```
-npm install github:furlab-project/expo-solar-icons#v1.0.0
+npm install github:vedla/expo-solar-icons#v1.0.0
 ```
 Or using yarn
 ```
-yarn add github:furlab-project/expo-solar-icons#v1.0.0
+yarn add github:vedla/expo-solar-icons#v1.0.0
 ```
 
 # Usage
 
 ``` tsx
-import { SolarIcon } from '@furlab/expo-solar-icons';
+import { SolarIcon } from '@vedla/expo-solar-icons';
 
 export default function Example() {
   return <SolarIcon name="home" size={24} color="black" />;
