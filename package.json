@@ -1,11 +1,14 @@
 {
-  "name": "@furlab/expo-solar-icons",
+  "name": "@vedla/expo-solar-icons",
   "version": "1.0.0",
+  "description": "Solar icons for React Native and Expo projects.",
+  "keywords": [],
+  "license": "ISC",
   "author": {
     "name": "Vedla Creative",
     "email": "code@vedla.ca"
   },
-  "description": "Solar icons for React Native and Expo projects.",
+  "type": "commonjs",
   "main": "build/IconsLazy.js",
   "module": "build/Icons.js",
   "types": "build/Icons.d.ts",
@@ -14,40 +17,36 @@
     "assets"
   ],
   "scripts": {
-    "copy-vendor": "rm -rf build/solar-icons && cp -R src/solar-icons build/solar-icons",
-    "generate-lazy": "expo-module babel --config-file ./babel.config.build.js --source-maps --out-file build/IconsLazy.js build/Icons.js",
     "build": "EXPO_NONINTERACTIVE=1 expo-module build && npm run generate-lazy && npm run copy-vendor",
     "build:dev": "expo-module build",
     "clean": "expo-module clean",
-    "test": "expo-module test",
+    "copy-vendor": "rm -rf build/solar-icons && cp -R src/solar-icons build/solar-icons",
+    "expo-module": "expo-module",
+    "generate-lazy": "expo-module babel --config-file ./babel.config.build.js --source-maps --out-file build/IconsLazy.js build/Icons.js",
     "lint": "expo-module lint",
     "prepare": "expo-module prepare && npm run generate-lazy && npm run copy-vendor",
     "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module"
+    "test": "expo-module test"
   },
   "jest": {
     "preset": "expo-module-scripts"
   },
-  "keywords": [],
-  "license": "ISC",
-  "type": "commonjs",
+  "dependencies": {
+    "@expo/vector-icons": ">=14",
+    "expo-modules-core": "^57.0.14"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.7",
-    "@eslint/js": "^10.0.1",
-    "@expo/vector-icons": "^14.0.0",
-    "@types/react-native": "~0.64",
-    "eslint": "10.1.0",
-    "eslint-config-universe": "15.0.3",
-    "expo-font": "14.0.4",
-    "expo-module-scripts": "55.0.2",
-    "prettier": "^3.8.1",
-    "react": "19.2.x",
-    "react-native": "0.83.x",
-    "@eslint/eslintrc": "^3.3.5",
-    "typescript": "^5.2.2"
+    "expo": ">=55.0.0",
+    "expo-font": ">=55.0.4",
+    "prettier": "^3.9.6",
+    "react": ">=19.0.0",
+    "react-native": ">=0.83.0",
+    "typescript": ">=5.2.2"
   },
   "peerDependencies": {
     "@expo/vector-icons": ">=14",
+    "expo": "*",
     "react": "*",
     "react-native": "*"
   },
@@ -56,5 +55,5 @@
       "optional": true
     }
   },
-  "dependencies": {}
+  "packageManager": "yarn@4.18.0"
 }
